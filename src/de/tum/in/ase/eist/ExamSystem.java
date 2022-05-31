@@ -1,7 +1,6 @@
 package de.tum.in.ase.eist;
 
-import java.io.IOException;
-import java.nio.file.Files;
+
 import java.nio.file.Path;
 
 public final class ExamSystem {
