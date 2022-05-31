@@ -2,12 +2,11 @@ package de.tum.in.ase.eist;
 
 public class EnterpriseHashing extends Hashing {
 
-    public EnterpriseHashing(HashFunction implementation) {
+    public EnterpriseHashing() {
         super(new CryptoSecureHashAlgorithm());
     }
 
-    public EnterpriseHashing() {
-    }
+
 
 
 

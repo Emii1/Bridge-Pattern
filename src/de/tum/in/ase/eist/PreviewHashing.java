@@ -13,7 +13,7 @@ public class PreviewHashing extends Hashing {
 
     @Override
     public String hashDocument(String input) {
-        if (input.length() > 1000){
+        if (input.length() > 1000) {
             throw new IllegalArgumentException();
         }
         else return getImplementation().calculateHashCode(input);
