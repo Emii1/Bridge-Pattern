@@ -15,7 +15,7 @@ public final class ExamSystem {
 		return hashFunction.calculateHashCode(document);
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		String file1 = readFile("exams/short_exam.txt");
 		String file2 = readFile("exams/long_exam.txt");  //This file is too big for Preview Hashing
 
@@ -37,10 +37,10 @@ public final class ExamSystem {
 		System.out.println(hashFile(file2, cryptoSecureHash));
 	}
 
-	public static String readFile(String filepath) throws IOException {
+	public static String readFile(String filepath)  {
 		Path path = Path.of(filepath);
 		// TODO 4: Return the content of the passed file as a String.
-		return Files.readString(path);
+		return null;
 
 	}
 
