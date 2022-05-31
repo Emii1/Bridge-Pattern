@@ -6,6 +6,10 @@ public class EnterpriseHashing extends Hashing {
         super(implementation);
     }
 
+    public EnterpriseHashing() {
+    }
+
+
     @Override
     public String hashDocument(String input) {
         return null;
