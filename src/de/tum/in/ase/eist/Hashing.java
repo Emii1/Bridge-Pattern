@@ -8,6 +8,10 @@ public abstract class Hashing  {
         this.implementation = implementation;
     }
 
+    public Hashing() {
+
+    }
+
     public HashFunction getImplementation() {
         return implementation;
     }

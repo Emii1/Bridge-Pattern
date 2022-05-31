@@ -6,6 +6,11 @@ public class PreviewHashing extends Hashing {
         super(implementation);
     }
 
+    public PreviewHashing() {
+        super();
+
+    }
+
     @Override
     public String hashDocument(String input) {
         return null;
