@@ -7,12 +7,15 @@ public class PreviewHashing extends Hashing {
     }
 
     public PreviewHashing() {
-        super();
+        super(new SimpleHashAlgorithm());
 
     }
 
     @Override
     public String hashDocument(String input) {
-        return null;
+        if (input.length() > 1000){
+            throw new IllegalArgumentException();
+        }
+        else return getImplementation().calculateHashCode(input);
     }
 }

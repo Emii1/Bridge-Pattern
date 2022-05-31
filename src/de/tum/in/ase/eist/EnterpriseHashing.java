@@ -3,15 +3,17 @@ package de.tum.in.ase.eist;
 public class EnterpriseHashing extends Hashing {
 
     public EnterpriseHashing(HashFunction implementation) {
-        super(implementation);
+        super(new CryptoSecureHashAlgorithm());
     }
 
     public EnterpriseHashing() {
     }
 
 
+
+
     @Override
     public String hashDocument(String input) {
-        return null;
+        return getImplementation().calculateHashCode(input);
     }
 }
